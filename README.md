@@ -1,1 +1,1 @@
-# lights-control
+# Lightly
