@@ -8,8 +8,12 @@ function Header() {
         <div className="nav">
           <div className="brand">lightly</div>
           <div className="items">
-            <Button>Login</Button>
-            <Button>Register</Button>
+            <a href="/" className="ui inverted button">
+              login
+            </a>
+            <a href="/" className="ui inverted button">
+              Register
+            </a>
           </div>
         </div>
         <div className="introduction">
