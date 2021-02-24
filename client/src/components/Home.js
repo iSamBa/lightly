@@ -1,7 +1,7 @@
 import "./home.css";
 
 function Home() {
-  return {};
+  return <div></div>;
 }
 
 export default Home;

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Lightly",
+  "name": "Control your Home lights systems",
   "icons": [
     {
       "src": "favicon.ico",

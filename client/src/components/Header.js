@@ -8,12 +8,8 @@ function Header() {
         <div className="nav">
           <div className="brand">lightly</div>
           <div className="items">
-            <a href="/" className="ui inverted button">
-              login
-            </a>
-            <a href="/" className="ui inverted button">
-              Register
-            </a>
+            <Button inverted>login</Button>
+            <Button inverted>Register</Button>
           </div>
         </div>
         <div className="introduction">
@@ -22,7 +18,7 @@ function Header() {
             This tool will allow you to add and manage light controllers of your
             home
           </h4>
-          <Button primary className="start-btn">
+          <Button secondary className="start-btn">
             Get started !
           </Button>
         </div>
