@@ -4,9 +4,10 @@ const Schema = mongoose.Schema;
 const device = new Schema({
   name: String,
   type: String,
-  hub: String,
-  room: String,
-  scene: String,
+  hub: mongoose.Types.ObjectId,
+  room: mongoose.Types.ObjectId,
+  scene: mongoose.Types.ObjectId,
 });
 
-export default mongoose.model("device", device);
+const deviceModel = mongoose.model("device", device);
+module.exports = deviceModel;

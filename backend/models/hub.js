@@ -7,4 +7,5 @@ const hub = new Schema({
   ip: String,
 });
 
-export default mongoose.model("hub", hub);
+const hubModel = mongoose.model("hub", hub);
+module.exports = hubModel;

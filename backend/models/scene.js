@@ -6,4 +6,5 @@ const scene = new Schema({
   type: String,
 });
 
-export default mongoose.model("scene", scene);
+const sceneModel = mongoose.model("scene", scene);
+module.exports = sceneModel;

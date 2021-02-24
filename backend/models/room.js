@@ -6,4 +6,5 @@ const room = new Schema({
   type: String,
 });
 
-export default mongoose.model("room", room);
+const roomModel = mongoose.model("room", room);
+module.exports = roomModel;
