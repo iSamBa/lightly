@@ -1,11 +1,15 @@
-import Header from "./components/Header";
+import Home from "./components/Home";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div>
       <header>
-        <Header></Header>
+        <NavBar></NavBar>
       </header>
+      <main>
+        <Home></Home>
+      </main>
     </div>
   );
 }
