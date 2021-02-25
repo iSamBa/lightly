@@ -3,9 +3,13 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: #222831;
   color: #fff;
-  height: 50vh;
+  height: 100vh;
+  background: radial-gradient(#858482, #385460);
+  /*background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url("../assets/jack-carter-tMGMINwFOtI-unsplash.jpg");*/
 }
 
 .nav {
@@ -13,7 +17,10 @@
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2% 2%;
+  padding: 2% 5%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.3);
 }
 .nav .brand {
   font-size: 2rem;
@@ -23,7 +30,7 @@
 
 .nav .brand:hover {
   cursor: pointer;
-  color: #00adb5;
+  color: #f8f408;
 }
 
 .introduction {
@@ -40,15 +47,20 @@
   font-size: 5rem;
   font-weight: 100;
   font-family: "Pacifico", cursive;
+  text-shadow: 0 4px black;
 }
 
 .description {
   font-family: "Open Sans", sans-serif;
+  text-shadow: 0 2px black;
   margin-bottom: 40px;
 }
 
 .start-btn {
-  width: 20%;
-  height: 15%;
+  width: 200px;
+  height: 50px;
   margin: 20px;
 }
+
+/* external color : #385460 */
+/* internal color : #858482 */
