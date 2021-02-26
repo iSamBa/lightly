@@ -4,10 +4,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-main {
-  height: 100vh;
-  width: 100%;
-}
-#root {
+/*#root {
   background: radial-gradient(#858482, #385460);
-}
+}*/
