@@ -12,7 +12,7 @@ roomsRouter.get("/", async (req, res) => {
 roomsRouter.get("/:id", async (req, res) => {
   const room = await roomModel.findOne({ _id: req.params.id });
   if (!room) {
-    res.status(404).send(`room with id ${req.params.id} was not found`);
+    res.status(404).send(`Room with id ${req.params.id} was not found`);
   } else {
     res.status(200).send(room);
   }
