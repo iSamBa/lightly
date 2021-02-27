@@ -13,7 +13,7 @@ const GettingStarted = () => {
           manage and parameterize all of them from{" "}
           <span className="brand">Lightly</span>
         </h4>
-        <Button color="grey" className="start-btn">
+        <Button color="black" className="start-btn">
           Get started !
         </Button>
       </div>
