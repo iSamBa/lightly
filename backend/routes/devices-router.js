@@ -1,6 +1,6 @@
 const express = require("express");
-const devicesRouter = express.Router();
 const deviceModel = require("../models/device");
+const devicesRouter = express.Router();
 
 devicesRouter.use(express.json());
 
