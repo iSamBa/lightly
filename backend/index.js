@@ -7,6 +7,7 @@ require("dotenv").config();
 mongoose.connect("mongodb://localhost:27017/lightly", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useFindAndModify: false,
 });
 
 const PORT = 5000 | process.env.PORT;
