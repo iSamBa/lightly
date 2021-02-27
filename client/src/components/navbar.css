@@ -1,0 +1,11 @@
+.header {
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+}
+
+.header {
+  cursor: pointer;
+  color: #f8f408;
+}
