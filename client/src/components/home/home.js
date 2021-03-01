@@ -1,5 +1,5 @@
 import "./home.css";
-import GettingStarted from "./getting-started";
+import GettingStarted from "../getting-started/getting-started";
 
 function Home() {
   return (

@@ -1,8 +1,8 @@
-import Home from "./components/home";
+import Home from "./components/home/home";
 import NavBar from "./components/navbar/nav-bar";
 import { Route, Switch } from "react-router-dom";
 import Login from "./components/auth/login";
-import Register from "./components/register";
+import Register from "./components/auth/register";
 import Bridges from "./components/bridges";
 import Devices from "./components/devices";
 import Rooms from "./components/rooms";
