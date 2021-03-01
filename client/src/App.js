@@ -1,8 +1,8 @@
-import Home from "./components/Home";
-import NavBar from "./components/NavBar";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Login from "./components/Login";
-import Register from "./components/Register";
+import Home from "./components/home";
+import NavBar from "./components/nav-bar";
+import { Route, Switch } from "react-router-dom";
+import Login from "./components/login";
+import Register from "./components/register";
 
 function App() {
   return (
