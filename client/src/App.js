@@ -1,7 +1,7 @@
 import Home from "./components/home";
-import NavBar from "./components/nav-bar";
+import NavBar from "./components/navbar/nav-bar";
 import { Route, Switch } from "react-router-dom";
-import Login from "./components/login";
+import Login from "./components/auth/login";
 import Register from "./components/register";
 import Bridges from "./components/bridges";
 import Devices from "./components/devices";
