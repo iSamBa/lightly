@@ -11,7 +11,7 @@ const Devices = () => {
       .then((data) => setDevices(data));
   }, []);
   return (
-    <div class="devices-container">
+    <div className="devices-container">
       <Header className="devices-header" as="h2">
         <Icon name="settings" />
         <Header.Content>

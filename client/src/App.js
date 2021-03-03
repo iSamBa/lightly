@@ -7,10 +7,11 @@ import Bridges from "./components/bridges";
 import Devices from "./components/devices";
 import Rooms from "./components/rooms";
 import Scenes from "./components/scenes";
+import NotFound from "./components/not-found/index";
 
 function App() {
   return (
-    <div>
+    <div className="main-app">
       <header>
         <NavBar></NavBar>
       </header>
@@ -38,7 +39,7 @@ function App() {
             <Scenes />
           </Route>
           <Route path="*">
-            <h2>Page not found</h2>
+            <NotFound />
           </Route>
         </Switch>
       </main>
