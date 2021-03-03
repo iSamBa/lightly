@@ -13,14 +13,7 @@ const NavBar = () => {
   };
 
   return (
-    /*<div className="nav">
-      <div className="brand">lightly</div>
-      <div className="items">
-        <Button inverted>login</Button>
-        <Button inverted>Register</Button>
-      </div>
-    </div>*/
-    <Menu>
+    <Menu className="navbar">
       <Menu.Item
         header
         name=""

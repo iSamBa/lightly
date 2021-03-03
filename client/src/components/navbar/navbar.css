@@ -3,9 +3,8 @@
   font-weight: 100;
   font-family: "Pacifico", cursive;
   color: #ffffff;
+  height: 100%;
 }
-
-.header {
-  cursor: pointer;
-  color: #f8f408;
+.navbar {
+  padding: 0 2%;
 }
