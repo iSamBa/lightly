@@ -1,0 +1,11 @@
+.devices-container {
+  height: 100vh;
+  width: 80%;
+  padding: 50px 0;
+}
+
+.devices-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

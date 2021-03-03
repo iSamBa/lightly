@@ -31,6 +31,11 @@ const NavBar = () => {
       </Menu.Item>
       <Menu.Menu position="right">
         <Menu.Item
+          name="Devices"
+          active={activeItem === "devices"}
+          onClick={handleItemClick}
+        />
+        <Menu.Item
           name="Login"
           active={activeItem === "login"}
           onClick={handleItemClick}

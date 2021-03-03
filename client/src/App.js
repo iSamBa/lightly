@@ -37,6 +37,9 @@ function App() {
           <Route exact path="/scenes">
             <Scenes />
           </Route>
+          <Route path="*">
+            <h2>Page not found</h2>
+          </Route>
         </Switch>
       </main>
     </div>

@@ -3,7 +3,12 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-
-/*#root {
-  background: radial-gradient(#858482, #385460);
-}*/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#root {
+  height: 100vh;
+  width: 100vw;
+}

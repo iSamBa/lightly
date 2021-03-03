@@ -4,7 +4,7 @@ import "./gettingStarted.css";
 
 const GettingStarted = () => {
   return (
-    <div className="container">
+    <div className="getting-started-container">
       <div className="introduction">
         <h1 className="title">Lightly</h1>
         <h4 className="description">
