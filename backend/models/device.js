@@ -7,6 +7,7 @@ const device = new Schema({
   hub: mongoose.Types.ObjectId,
   room: mongoose.Types.ObjectId,
   scene: mongoose.Types.ObjectId,
+  description: String,
 });
 
 const deviceModel = mongoose.model("device", device);

@@ -5,6 +5,7 @@ const bridge = new Schema({
   name: String,
   type: String,
   ip: String,
+  description: String,
 });
 
 const bridgeModel = mongoose.model("bridge", bridge);

@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const room = new Schema({
   name: String,
   type: String,
+  description: String,
 });
 
 const roomModel = mongoose.model("room", room);
