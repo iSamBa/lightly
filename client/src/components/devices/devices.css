@@ -1,10 +1,17 @@
 .devices-container {
-  width: 80%;
+  width: 70%;
   height: 100%;
   padding-top: 50px;
 }
 .devices-header {
   height: auto;
+  width: 100%;
+}
+
+.devices-header div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .devices-group {
