@@ -19,7 +19,11 @@ devicesRouter.get("/:id", async (req, res) => {
 });
 
 devicesRouter.post("/", async (req, res) => {
-  const device = new deviceModel({ name: req.body.name, type: req.body.type });
+  const device = new deviceModel({
+    name: req.body.name,
+    type: req.body.type,
+    description: req.body.description,
+  });
   await device.save();
   res.status(200).send(device);
 });

@@ -19,7 +19,11 @@ roomsRouter.get("/:id", async (req, res) => {
 });
 
 roomsRouter.post("/", async (req, res) => {
-  const room = new roomModel({ name: req.body.name, type: req.body.type });
+  const room = new roomModel({
+    name: req.body.name,
+    type: req.body.type,
+    description: req.body.description,
+  });
   await room.save();
   res.status(200).send(room);
 });

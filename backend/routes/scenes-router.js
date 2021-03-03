@@ -19,7 +19,11 @@ scenesRouter.get("/:id", async (req, res) => {
 });
 
 scenesRouter.post("/", async (req, res) => {
-  const scene = new sceneModel({ name: req.body.name, type: req.body.type });
+  const scene = new sceneModel({
+    name: req.body.name,
+    type: req.body.type,
+    description: req.body.description,
+  });
   await scene.save();
   res.status(200).send(scene);
 });

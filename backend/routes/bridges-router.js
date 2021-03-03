@@ -23,6 +23,7 @@ bridgesRouter.post("/", async (req, res) => {
     name: req.body.name,
     type: req.body.type,
     ip: req.body.ip,
+    description: req.body.description,
   });
   await bridge.save();
   res.status(200).send(bridge);
