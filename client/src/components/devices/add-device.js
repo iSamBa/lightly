@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button, Form } from "semantic-ui-react";
 
-const AddDevice = () => {
+const AddDevice = (props) => {
   const [name, setName] = useState("");
   const [type, setType] = useState("");
   const [description, setDescription] = useState("");
@@ -13,6 +13,10 @@ const AddDevice = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ name, type, description }),
+    }).then(() => {
+      setTimeout(() => {
+        props.showList();
+      }, 1000);
     });
   };
   return (
