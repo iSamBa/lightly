@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Card, Header, Icon, Button } from "semantic-ui-react";
 import Device from "./device";
+import AddDevice from "./add-device";
 import "./devices.css";
 
 const Devices = () => {
@@ -10,6 +11,13 @@ const Devices = () => {
       .then((res) => res.json())
       .then((data) => setDevices(data));
   }, []);
+
+  const [addDevice, setAddDevice] = useState(false);
+
+  const handleClick = () => {
+    setAddDevice(!addDevice);
+  };
+
   return (
     <div className="devices-container">
       <Header className="devices-header">
@@ -17,16 +25,26 @@ const Devices = () => {
         <Header.Content>
           <div>
             <h2>Devices</h2>
-            <Button>Add new device</Button>
+            {!addDevice ? (
+              <Button primary onClick={handleClick}>
+                Add new device
+              </Button>
+            ) : (
+              <Button onClick={handleClick}>Add new device</Button>
+            )}
           </div>
           <Header.Subheader>Manage your preferences</Header.Subheader>
         </Header.Content>
       </Header>
-      <Card.Group className="devices-group">
-        {devices.map((device) => (
-          <Device key={device._id} device={device} />
-        ))}
-      </Card.Group>
+      {!addDevice ? (
+        <Card.Group className="devices-group">
+          {devices.map((device) => (
+            <Device key={device._id} device={device} />
+          ))}
+        </Card.Group>
+      ) : (
+        <AddDevice />
+      )}
     </div>
   );
 };
