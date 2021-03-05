@@ -14,6 +14,7 @@ const AddDevice = (props) => {
       },
       body: JSON.stringify({ name, type, description }),
     }).then(() => {
+      props.action({ name, type, description });
       setTimeout(() => {
         props.showList();
       }, 1000);

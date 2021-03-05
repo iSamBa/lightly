@@ -18,6 +18,10 @@ const Devices = () => {
     setAddDevice(!addDevice);
   };
 
+  const addNewDevice = (device) => {
+    setDevices([...devices, device]);
+  };
+
   const showDevicesList = () => {
     setAddDevice(false);
   };
@@ -47,7 +51,7 @@ const Devices = () => {
           ))}
         </Card.Group>
       ) : (
-        <AddDevice showList={showDevicesList} />
+        <AddDevice action={addNewDevice} showList={showDevicesList} />
       )}
     </div>
   );
