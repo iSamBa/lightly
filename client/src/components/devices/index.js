@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Card, Header, Icon, Button } from "semantic-ui-react";
+import { Card, Header, Icon, Button, Grid } from "semantic-ui-react";
 import Device from "./device";
 import AddDevice from "./add-device";
 import "./devices.css";
@@ -45,11 +45,13 @@ const Devices = () => {
         </Header.Content>
       </Header>
       {!addDevice ? (
-        <Card.Group className="devices-group">
+        <Grid relaxed columns={4}>
           {devices.map((device) => (
-            <Device key={device._id} device={device} />
+            <Grid.Column className="devices-group">
+              <Device key={device._id} device={device} />
+            </Grid.Column>
           ))}
-        </Card.Group>
+        </Grid>
       ) : (
         <AddDevice action={addNewDevice} showList={showDevicesList} />
       )}
