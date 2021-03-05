@@ -46,7 +46,7 @@ const Devices = () => {
       </Header>
       {!addDevice ? (
         <Grid relaxed columns={4}>
-          {devices.map((device) => (
+          {devices.reverse().map((device) => (
             <Grid.Column className="devices-group">
               <Device key={device._id} device={device} />
             </Grid.Column>
