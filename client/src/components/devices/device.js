@@ -18,8 +18,8 @@ const Device = (props) => {
       </Card.Content>
       <Card.Content extra>
         <div className="ui two buttons">
-          <Button color="green">Edit</Button>
-          <Button color="red">Delete</Button>
+          <Button circular icon="edit"></Button>
+          <Button circular icon="delete"></Button>
         </div>
       </Card.Content>
     </Card>
