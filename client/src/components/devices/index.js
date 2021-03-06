@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Card, Header, Icon, Button, Grid } from "semantic-ui-react";
+import { Header, Icon, Button, Grid } from "semantic-ui-react";
 import Device from "./device";
 import AddDevice from "./add-device";
 import "./style.css";
