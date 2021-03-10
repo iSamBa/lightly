@@ -52,7 +52,7 @@ const Bridges = () => {
           ))}
         </Grid>
       ) : (
-        <AddBridge action={addNewBridge} showList={showBridgesList} />
+        <h1>Not yet impelmented</h1>
       )}
     </div>
   );
